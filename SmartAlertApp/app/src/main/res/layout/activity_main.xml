@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a9a9a9"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/smartalertlogo"
+        android:layout_width="258dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="56dp"
+        android:text="SmartAlert App"
+        android:textAlignment="gravity"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.734"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+
+        android:layout_height="60dp"
+        android:layout_marginTop="56dp"
+        android:contentDescription="AppLogo"
+        app:layout_constraintEnd_toStartOf="@+id/smartalertlogo"
+        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo"
+        tools:src="@drawable/logo"
+        tools:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/welcometext"
+        android:layout_width="301dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="140dp"
+        android:text="Ενημερώσου άμεσα για κινδύνους και συμβάντα"
+        android:textAlignment="center"
+        android:textColor="#701c1c"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="344dp"
+        android:text="Συνδεθείτε για να συνεχίσετε"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="416dp"
+        android:onClick="login"
+        android:text="Σύνδεση"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/registerbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="496dp"
+        android:onClick="register"
+        android:text="Εγγραφή"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/EnglishLan"
+        android:layout_width="41dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="4dp"
+        android:onClick="changeLanguage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.824"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/english_icon_png_12" />
+
+    <ImageView
+        android:id="@+id/greekLan"
+        android:layout_width="41dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="4dp"
+        android:onClick="changeLanguage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/flag_of_greece_greek_flags_of_the_world_png_favpng_hsjw9ccckxxnathetlad26qst" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
